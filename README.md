@@ -18,6 +18,12 @@
 - llm모델의 시계열 데이터 학습 방법?
 
 
+### Unsloth 라이브러리 활용 LLM finetuning
+- [테스트 코드](/home/moon/llm_finetuning/unsloth/ft_llama_test.ipynb)
+    - Alpaca Style 형식의 데이터 셋을 구축하고 단일 GPU로 학습 진행
+    - HuggingFace에 FT된 모델 업로드 [moon301/llama-3.1-8b-finetuned-lh-announcement](https://huggingface.co/moon301/llama-3.1-8b-finetuned-lh-announcement)
+    - 데이터셋의 질과 양에 따라서 모델의 학습 능력이 달라질 것 같음
+    - 해당 모델은 Llama3 8B모델을 4bit로 양자화된 모델(unsloth 제공) + LoRA기법 활용
 
 ### 공통 SW 개발 추진 주요 (목표) 기술
 
